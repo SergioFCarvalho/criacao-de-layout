@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main id="container">
+      <section id="menu">
+        <img src="https://github.com/SergioFCarvalho.png" alt="perfil" />
+        <h2 class="name">Sérgio Freire</h2>
+        <p class="description">
+          Estudante de Análise e Desenvolvimento de Sistemas e outras
+          tecnologias.
+        </p>
+        <ul class="list-links">
+          <li>
+            <a href="https://github.com/SergioFCarvalho"
+              >GitHub <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sérgio-freire"
+              >LinkedIn <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:sergiofreire25@gmail.com"
+              >E-mail <i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="content">
+        <h1>Lista de Tarefas</h1>
+        <div class="table-task">
+          <div class="list-task">
+            <h3>Manhã <i class="fa-regular fa-sun"></i></h3>
+            <ul id="day-tasks">
+              <li>
+                <span>Estudar javascript</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Ajudar um amigo com um projeto</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Praticar Atividade Física</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Ler Emails</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Preparar o Almoço</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Ler livro</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Fazer compras</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+
+              <li>
+                <span>Limpar a casa</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+
+              <li>
+                <span>Ir ao banco</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="list-task">
+            <h3>Noite <i class="fa-regular fa-moon"></i></h3>
+            <ul id="night-tasks">
+              <li>
+                <span>Ler artigo</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Assistir aulas de programação</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Organizar atividades</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+              <li>
+                <span>Encontrar-se com amigos</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+
+              <li>
+                <span>Assistir a um filme</span>
+                <i class="fa-solid fa-trash" onclick="removeTask(event)"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="add-task">
+          <input
+            autofocus
+            rows="10"
+            cols="50"
+            type="text"
+            id="new-task"
+            placeholder="Adicionar Tarefa"
+          />
+          <button id="day-btn" onclick="addTask('day')">
+            Adicionar <i class="fa-regular fa-sun"></i>
+          </button>
+          <button id="night-btn" onclick="addTask('night')">
+            Adicionar <i class="fa-regular fa-moon"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
